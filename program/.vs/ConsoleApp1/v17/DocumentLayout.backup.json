@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Andynotebook\\OneDrive - DELTA - S\u0160IE, s.r.o\\Desktop\\skola\\github\\PR1_2024_Myroncuk\\projekty pr\\copypaste\\program\\",
+  "WorkspaceRootPath": "C:\\Users\\Andynotebook\\OneDrive - DELTA - S\u0160IE, s.r.o\\Desktop\\SmartWork\\project_code\\SmartWork\\program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2EB05166-AF33-4955-AAA8-439A1B0D036E}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\andynotebook\\onedrive - delta - s\u0161ie, s.r.o\\desktop\\skola\\github\\pr1_2024_myroncuk\\projekty pr\\copypaste\\program\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2EB05166-AF33-4955-AAA8-439A1B0D036E}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\andynotebook\\onedrive - delta - s\u0161ie, s.r.o\\desktop\\smartwork\\project_code\\smartwork\\program\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2EB05166-AF33-4955-AAA8-439A1B0D036E}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Andynotebook\\OneDrive - DELTA - S\u0160IE, s.r.o\\Desktop\\skola\\github\\PR1_2024_Myroncuk\\projekty pr\\copypaste\\program\\ConsoleApp1\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Andynotebook\\OneDrive - DELTA - S\u0160IE, s.r.o\\Desktop\\SmartWork\\project_code\\SmartWork\\program\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
-              "ToolTip": "C:\\Users\\Andynotebook\\OneDrive - DELTA - S\u0160IE, s.r.o\\Desktop\\skola\\github\\PR1_2024_Myroncuk\\projekty pr\\copypaste\\program\\ConsoleApp1\\Program.cs",
-              "RelativeToolTip": "ConsoleApp1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Andynotebook\\OneDrive - DELTA - S\u0160IE, s.r.o\\Desktop\\SmartWork\\project_code\\SmartWork\\program\\ConsoleApp1\\Program.cs*",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs*",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAcwIkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T08:16:34.205Z",
               "EditorCaption": ""
