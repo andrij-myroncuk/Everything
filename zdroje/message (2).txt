@@ -1,0 +1,115 @@
+namespace randomy
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            float a;
+            float b;
+            float c;
+
+            float plocha;
+            float objem;
+
+            Console.Write("Zadejte stranu a (kvádru): ");
+            a = float.Parse(Console.ReadLine());
+
+            Console.Write("Zadejte stranu b (kvádru): ");
+            b = float.Parse(Console.ReadLine());
+
+            Console.Write("Zadejte stranu c (kvádru): ");
+            c = float.Parse(Console.ReadLine());
+
+            plocha = 2 * (a*b + a*c + b*c);
+            objem = a*b*c;
+
+            Console.WriteLine("Povrch tohoto kvádru je " + plocha + " cm²");
+            Console.WriteLine("Objem tohoto kvádru je " + objem + " cm³");
+            */
+
+
+            /*float prvni_cena;
+            float druha_cena;
+            float treti_cena;
+
+            string prvni_nazev;
+            string druhy_nazev;
+            string treti_nazev;
+
+            Console.Write("Jak chcete pojmenovat první produkt: ");
+            prvni_nazev = Console.ReadLine();
+            Console.Write("Kolik korun chcete, aby tento produkt stál: ");
+            prvni_cena = float.Parse(Console.ReadLine());
+
+
+            Console.Write("Jak chcete pojmenovat druhý produkt: ");
+            druhy_nazev = Console.ReadLine();
+            Console.Write("Kolik korun chcete, aby tento produkt stál: ");
+            druha_cena = float.Parse(Console.ReadLine());
+
+            Console.Write("Jak chcete pojmenovat třetí produkt: ");
+            treti_nazev = Console.ReadLine();
+            Console.Write("Kolik korun chcete, aby tento produkt stál: ");
+            treti_cena = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("\nČas si objednat!\n");
+
+            int prvni_pocet;
+            int druhy_pocet;
+            int treti_pocet;
+
+            //Console.Write("Počet " + prvni_nazev + " (" + prvni_cena + " kč )");
+            Console.Write($"Počet {prvni_nazev} ( {prvni_cena} kč ):");
+            prvni_pocet = int.Parse(Console.ReadLine());
+
+            Console.Write($"Počet {druhy_nazev} ( {druha_cena} kč ):");
+            druhy_pocet = int.Parse(Console.ReadLine());
+
+            Console.Write($"Počet {treti_nazev} ( {treti_cena:F2} kč ):");
+            treti_pocet = int.Parse(Console.ReadLine());
+
+            float suma;
+
+            suma = (prvni_pocet * prvni_cena) + (druhy_pocet * druha_cena) + (treti_pocet * treti_cena);
+
+            string sumaString = suma.ToString("0.00");
+
+            Console.WriteLine("Celkový nákup vás bude stát: " + sumaString + " kč");
+            
+            /*Console.Write("Počet vajec (3,5 kč):");
+            int vejce = int.Parse(Console.ReadLine());
+
+            Console.Write("Počet rohlíků (1,9 kč):");
+            int rohliky = int.Parse(Console.ReadLine());
+
+            Console.Write("Počet chlebů (25,0 kč):");
+            int chleby = int.Parse(Console.ReadLine());
+
+            */
+            //float suma = (vejce * cena_vejce) + (rohliky * cena_rohliku) + (chleby * cena_chleba);
+            //Console.WriteLine("Celkový nákup bude stát: " + suma + " kč");
+
+            Random kostka = new Random();
+            int prvni_cislo = kostka.Next(1, 7); // VAŠE kostka
+            int druhe_cislo = kostka.Next(1, 7); // SOUPEŘOVA kostka
+
+            Console.WriteLine("Zahrajeme si na kostky! Stiskni jakoukoliv klávesu pro start.");
+            Console.ReadKey();
+            Console.Clear();
+
+            if (prvni_cislo < druhe_cislo)
+            {
+                Console.WriteLine("Prohrál si! TY: " + prvni_cislo + ", OPONENT: " + druhe_cislo);
+            }
+            else if (prvni_cislo > druhe_cislo)
+            {
+                Console.WriteLine("Vyhrál si! TY: " + prvni_cislo + ", OPONENT: " + druhe_cislo);
+            }
+            else
+            {
+                Console.WriteLine("Remíza!!!!!!! TY: " + prvni_cislo + ", OPONENT: " + druhe_cislo);
+            }
+        }
+    }
+}

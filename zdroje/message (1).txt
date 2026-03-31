@@ -1,0 +1,120 @@
+```cs
+namespace nejvetsi_pole_v_2d_poli
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Napiš velikost mapy");
+            int size = int.Parse(Console.ReadLine());
+            Console.Clear();
+            int[,] map = new int[size, size];
+
+            Random rand = new Random();
+
+            int formerDistance = 0;
+
+            bool won = false;
+            int playerX = rand.Next(0, size);
+            int playerY = rand.Next(0, size);
+
+            int treasureX = rand.Next(0, size);
+            int treasureY = rand.Next(0, size);
+
+            while (playerX == treasureX && playerY == treasureY)
+            {
+                treasureX = rand.Next(0, size);
+                treasureY = rand.Next(0, size);
+            }
+
+            while (true)
+            {
+                //výpis pole
+                for (int i = 0; i < size; i++)
+                {
+                    for (int j = 0; j < size; j++)
+                    {
+                        if (i == playerX && j == playerY)
+                        {
+                            Console.Write(" P ");
+                        }
+                        else
+                        {
+                            Console.Write(" . ");
+                        }
+                    }
+                    Console.WriteLine();
+                }
+
+
+                int distance = Math.Abs(playerX - treasureX) + Math.Abs(playerY - treasureY);
+                if (distance > formerDistance)
+                {
+                    Console.WriteLine("Ochlazuje se");
+                }
+                else
+                {
+                    if (distance < 3)
+                    {
+                        Console.WriteLine("Horko");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Přihořívá");
+                    }
+                }
+                formerDistance = distance;
+
+                if (playerX == treasureX && playerY == treasureY)
+                {
+                    Console.WriteLine("Našel jste poklad");
+                    break;
+                }
+
+
+                char input = '0';
+                // vstup
+                if (!won)
+                {
+                    input = Console.ReadKey().KeyChar;
+                }
+
+                switch (input)
+                {
+                    case 'w':
+                        playerX -= 1;
+                        if (playerX < 0)
+                        {
+                            playerX = 0;
+                        }
+                        break;
+                    case 'a':
+                        playerY -= 1;
+                        if (playerY < 0)
+                        {
+                            playerY = 0;
+                        }
+
+                        break;
+                    case 's':
+                        playerX += 1;
+                        if (playerX > size - 1)
+                        {
+                            playerX = size - 1;
+                        }
+                        break;
+                    case 'd':
+                        playerY += 1;
+                        if (playerY > size - 1)
+                        {
+                            playerY = size - 1;
+                        }
+                        break;
+                }
+
+                Console.Clear();
+            }
+        }
+    }
+}
+```

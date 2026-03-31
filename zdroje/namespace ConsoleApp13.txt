@@ -1,0 +1,118 @@
+namespace ConsoleApp13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            bool cykl = true;
+            do
+            {
+                string[] znaky = { ":)", ":3", ":/", ":>", ":<", ":P" };
+                int[,] pexeso = new int[3, 4];
+                int[] kontrola = { 0, 0, 0, 0, 0, 0 };
+                bool loop = true;
+                int R;
+                Random random = new Random();
+                for (int i = 0; i < pexeso.GetLength(0); i++)
+                {
+                    for (int j = 0; j < pexeso.GetLength(1); j++)
+                    {
+                        do
+                        {
+                            R = random.Next(1, 7);
+                            if (kontrola[R - 1] != 2)
+                            {
+                                kontrola[R - 1]++;
+                                pexeso[i, j] = R;
+                                loop = false;
+                            }
+                            else
+                            {
+                                loop = true;
+                            }
+                        } while (loop);
+                    }
+                }
+                VypisPole(pexeso, znaky);
+            } while (!cykl);
+        }
+        public static void VypisPole(int[,] pexeso, string[] znaky)
+        {
+            Console.WriteLine("   1  2  3  4");
+            for (int i = 0; i < pexeso.GetLength(0); i++)
+            {
+                Console.Write(i+1+" ");
+                for (int j = 0; j < pexeso.GetLength(1); j++)
+                {
+           
+                    Console.Write(znaky[pexeso[i, j] - 1] + " ");
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+namespace cviceni
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int suma = 0;
+            for (int i = 1; i < 11; i++)
+            {
+                int vstup = int.Parse(Console.ReadLine());
+                if (vstup % 2 == 0)
+                {
+                    suma += vstup;
+                }
+            }
+            Console.WriteLine("-");
+            Console.WriteLine(suma);
+
+            /*int n;
+            Console.WriteLine("Kolik Fibonacciho čísel chceš spočítat?");
+            n = int.Parse(Console.ReadLine());
+            Console.Clear();
+            int a = 0;
+            int b = 1;
+
+            
+            for (int i = 0; i < n; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    a = a + b;
+                    Console.WriteLine(a);
+                }
+                else
+                {
+                    b = b + a;
+                    Console.WriteLine(b);
+                }
+
+            }*/
+            /*for(int i = 10; i > 0;i--)
+            {
+                Console.Write(i+" ");
+            }*/
+
+            /*Console.WriteLine("Zadejte základ");
+            int zaklad = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < 10; i++)
+            {
+                int vysledek = (i + 1) * zaklad;
+                Console.WriteLine((i + 1) + "x" + zaklad + " = " + vysledek);
+            }*/
+
+            /*for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("ahoj");
+            }*/
+
+
+        }
+    }
+}

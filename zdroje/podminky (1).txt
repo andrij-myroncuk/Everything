@@ -1,0 +1,122 @@
+namespace podmínky_kroužek
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            /*
+            int a = 1;
+            float b = 2.5f;
+            string c = "abc";
+            char d = 'd';
+            bool e = true;
+            bool f = false;
+
+            string cislo = "56";
+
+            int cislo_int = int.Parse(cislo);
+
+            Console.WriteLine("string" + 'g' + 5 + 6.655f);
+            Console.WriteLine(cislo_int + cislo_int);
+            Console.WriteLine("ahoj ja jsem tady");
+            
+
+
+
+            Console.Write("zadejte číslo:");
+            int mensi = int.Parse(Console.ReadLine());
+
+            mensi = mensi + 45;
+            mensi += 45;
+            mensi++;
+
+
+            mensi = mensi - 1;//odečte se 1
+            mensi--; //odečte se 1
+            mensi -= 45; //odečte se 45
+
+            Console.WriteLine(mensi);
+
+
+
+            if (mensi == 0)
+                mensi = mensi + 1;
+
+            Console.WriteLine("zatim");
+            Console.WriteLine("zatim zatim");
+
+
+            if (!(mensi <= 15))
+            {
+                Console.WriteLine("je menší nebo rovno 15");
+
+                Console.WriteLine();
+            }
+            if (mensi>15)
+            {
+
+            }
+            else if (true) 
+            {
+                if (mensi > 15)
+                {
+                    Console.WriteLine("je větší než 15");
+                }
+            }
+            else
+            {
+                Console.WriteLine("jak se ti to povedlo");
+            }
+
+            bool projde = false;
+
+            if (!projde)
+            {
+
+            }
+            */
+
+
+
+
+
+
+
+            Console.WriteLine("Kalkulačka");
+
+            Console.Write("cislo1 :");
+            int cislo1 = int.Parse(Console.ReadLine());
+            Console.Write("cislo2 :");
+            int cislo2 = int.Parse(Console.ReadLine());
+
+            int soucet;
+            Console.WriteLine("1 = součet");
+            Console.WriteLine("2 = rozdíl");
+            Console.WriteLine("3 = nasobení");
+            Console.WriteLine("4 = dělení");
+            int operace = int.Parse(Console.ReadLine());
+
+            if(operace == 1)
+            {
+                soucet = cislo1 + cislo2;
+                Console.WriteLine("součet = "+soucet);
+            }
+            else if(operace == 2)
+            {
+                soucet = cislo1 - cislo2;
+                Console.WriteLine("rozdíl = "+soucet);
+            }
+            else if (operace == 3)
+            {
+                soucet = cislo1 * cislo2;
+                Console.WriteLine("násobení = " + soucet);
+            }
+            else if (operace == 4)
+            {
+                soucet = cislo1 * cislo2;
+                Console.WriteLine("dělení = " + soucet);
+            }
+        }
+    }
+}

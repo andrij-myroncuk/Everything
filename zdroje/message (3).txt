@@ -1,0 +1,94 @@
+using System.Runtime.InteropServices;
+
+namespace test
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            /*string a = "d";
+
+            switch (a)
+            {
+                case "a":
+                    Console.WriteLine("a");
+                    break;
+                case "d":
+                    Console.WriteLine("b");
+                    break;
+
+                default:
+                    Console.WriteLine("defaultní hodnota");
+            }*/
+
+
+            /*int a = 1;
+            float b = 0.3f;
+            float c = 0.25f;
+            switch (b)
+            {
+                case  4:
+                    Console.WriteLine("nevim");
+                    break;
+                case 0.3f:
+                    Console.WriteLine("nevim 2");
+                    break;
+
+            }
+            */
+
+            //string nevim = Console.ReadLine();
+            /*char charakter = 'a';
+
+
+            //char cislo = '0';
+            char cislo = (char)48;
+
+
+
+            //Console.WriteLine(cislo);
+            char znak = '#';
+            Console.WriteLine("Zadejte písmeno:");
+            char mujChar = Console.ReadKey().KeyChar;
+
+            Console.Clear();
+     
+
+            Console.WriteLine(mujChar);
+            */
+
+
+            //Console.WriteLine("Milý uživateli, ");
+
+            Console.WriteLine("Milý uživateli, zadej první číslo prosím");
+            float a = float.Parse(Console.ReadLine());
+            Console.WriteLine("Jaké znaménko chcete použít?");
+            char znamenko = Console.ReadKey().KeyChar;
+            Console.WriteLine();
+            Console.WriteLine("Jaké druhé číslo chcete použít?");
+            float b = float.Parse(Console.ReadLine());
+            float vysledek ;
+            switch (znamenko)
+            {
+                case '+':
+                    vysledek = a + b;
+                    break;
+                case '-':
+                    vysledek = a - b;
+                    break;
+                case '*':
+                    vysledek = a * b;
+                    break;
+                case '/':
+                    vysledek = a / b;
+                    break;
+                default:
+                    Console.WriteLine("Špatně zadaná hodnota");
+                    return;
+            }
+            Console.WriteLine(a + " " + znamenko + " " + b + " = " + vysledek);
+
+        }
+    }
+
+}
